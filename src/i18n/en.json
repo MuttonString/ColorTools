@@ -6,5 +6,8 @@
     "dark": "Dark theme",
     "auto": "Follow system",
     "lang": "Language"
+  },
+  "error": {
+    "notFound": "Page not found"
   }
 }

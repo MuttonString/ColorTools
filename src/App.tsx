@@ -21,6 +21,7 @@ import {
 } from '@ant-design/icons';
 import { useCallback, useEffect, useState } from 'react';
 import { AUTO, LANG, THEME } from './constant';
+import { Outlet } from 'react-router';
 
 const { Header, Content, Footer } = Layout;
 const html = document.querySelector('html')!;
@@ -200,7 +201,9 @@ const App = () => {
             </Flex>
           </Flex>
         </Header>
-        <Content></Content>
+        <Content className={styles.content}>
+          <Outlet />
+        </Content>
         <Footer className={styles.footer}>
           <Flex gap={16} justify='center'>
             <div>{t('layout.about')}</div>
